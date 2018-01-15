@@ -1,14 +1,53 @@
-<div>
-  <%= link_to "Home", root_path %>
-  <%= link_to "About Us", about_path %>
-  <%= link_to "Clubhouse", clubhouse_path %>
-  <%= link_to "Greenbelts", greenbelts_path %>
-  <%= link_to "Lake", lake_path %>
-  <%= link_to "Swimming Pool", swimming_pool_path %>
-  <%= link_to "Parks", parks_path %>
-  <%= link_to "Forms", forms_path %>
-  <%= link_to "Golf Course", golf_course_path %>
-  <%= link_to "Cemetery", cemetery_path %>
-  <%= link_to "Community Links", community_links_path %>
-  <%= link_to "Contact Us", contact_path %>
-</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#"><%= image_tag "logo.png", width: 40, alt: "Profile Image" %></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", root_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", about_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Clubhouse", clubhouse_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Greenbelts", greenbelts_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Lake", lake_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Swimming Pool", swimming_pool_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Parks", parks_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Forms", forms_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Golf Course", golf_course_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Cemetery", cemetery_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Community Links", community_links_path, :class => "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact Us", contact_path, :class => "nav-link" %>
+      </li>
+    </ul>
+    
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    
+  </div>
+</nav>
