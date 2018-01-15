@@ -1,46 +1,46 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><%= image_tag "logo.png", width: 40, alt: "Profile Image" %></a>
+  <a class="navbar-brand" href="/"><%= image_tag "logo.png", width: 40, alt: "Profile Image", :class => "logo" %></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "Home", root_path, :class => "nav-link" %>
+      <li class="nav-item">
+        <%= link_to "Home", root_path, :class => "nav-link #{active? root_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "About", about_path, :class => "nav-link" %>
+        <%= link_to "About", about_path, :class => "nav-link #{active? about_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Clubhouse", clubhouse_path, :class => "nav-link" %>
+        <%= link_to "Clubhouse", clubhouse_path, :class => "nav-link #{active? clubhouse_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Greenbelts", greenbelts_path, :class => "nav-link" %>
+        <%= link_to "Greenbelts", greenbelts_path, :class => "nav-link #{active? greenbelts_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Lake", lake_path, :class => "nav-link" %>
+        <%= link_to "Lake", lake_path, :class => "nav-link #{active? lake_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Swimming Pool", swimming_pool_path, :class => "nav-link" %>
+        <%= link_to "Swimming Pool", swimming_pool_path, :class => "nav-link #{active? swimming_pool_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Parks", parks_path, :class => "nav-link" %>
+        <%= link_to "Parks", parks_path, :class => "nav-link #{active? parks_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Forms", forms_path, :class => "nav-link" %>
+        <%= link_to "Forms", forms_path, :class => "nav-link #{active? forms_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Golf Course", golf_course_path, :class => "nav-link" %>
+        <%= link_to "Golf Course", golf_course_path, :class => "nav-link #{active? golf_course_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Cemetery", cemetery_path, :class => "nav-link" %>
+        <%= link_to "Cemetery", cemetery_path, :class => "nav-link #{active? cemetery_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Community Links", community_links_path, :class => "nav-link" %>
+        <%= link_to "Community Links", community_links_path, :class => "nav-link #{active? community_links_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contact Us", contact_path, :class => "nav-link" %>
+        <%= link_to "Contact Us", contact_path, :class => "nav-link #{active? contact_path}" %>
       </li>
     </ul>
     
