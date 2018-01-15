@@ -4,14 +4,26 @@ class PagesController < ApplicationController
 
   def about
   end
+  
+  def clubhouse
+  end
 
   def greenbelts
+  end
+  
+  def lake
+  end
+  
+  def swimming_pool
+  end
+  
+  def parks
   end
 
   def forms
   end
 
-  def gold_course
+  def golf_course
   end
 
   def cemetery
