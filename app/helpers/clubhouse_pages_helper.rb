@@ -1,0 +1,2 @@
+module ClubhousePagesHelper
+end

@@ -4,9 +4,6 @@ class PagesController < ApplicationController
 
   def about
   end
-  
-  def clubhouse
-  end
 
   def greenbelts
   end
@@ -28,10 +25,16 @@ class PagesController < ApplicationController
 
   def cemetery
   end
+  
+  def spoc
+  end
 
   def community_links
   end
 
   def contact
+  end
+  
+  def general_information
   end
 end

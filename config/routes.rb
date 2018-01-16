@@ -1,5 +1,25 @@
 Rails.application.routes.draw do
 
+  get 'clubhouse_pages/general_information'
+
+  get 'clubhouse_pages/calendar'
+
+  get 'clubhouse_pages/hours'
+
+  get 'clubhouse_pages/reading_room'
+
+  get 'clubhouse_pages/meeting_minutes'
+
+  get 'clubhouse_pages/rental_rules'
+
+  get 'clubhouse_pages/rental_fees'
+
+  get 'clubhouse_pages/rental_contact'
+
+  get 'clubhouse_pages/policy'
+
+  get 'clubhouse_pages/check_out_list'
+
   get 'about', to: 'pages#about'
   
   get 'clubhouse', to: 'pages#clubhouse'
@@ -17,6 +37,8 @@ Rails.application.routes.draw do
   get 'golf_course', to: 'pages#golf_course'
   
   get 'cemetery', to: 'pages#cemetery'
+  
+  get 'spoc', to: 'pages#spoc'
   
   get 'community_links', to: 'pages#community_links'
   
