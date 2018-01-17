@@ -1,0 +1,2 @@
+module SwimmingPoolHelper
+end

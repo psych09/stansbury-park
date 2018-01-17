@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'swimming_pool/general_information'
+
+  get 'swimming_pool/rules'
+
+  get 'swimming_pool/hours'
+
+  get 'swimming_pool/admission'
+
+  get 'swimming_pool/season_pass'
+
+  get 'swimming_pool/party_rental'
+
+  get 'swimming_pool/swimming_lessons'
+
   get 'lake/general_information'
 
   get 'lake/rules'
