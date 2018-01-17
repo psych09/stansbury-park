@@ -1,4 +1,4 @@
-class ClubhousePagesController < ApplicationController
+class ClubhouseController < ApplicationController
   def general_information
   end
 

@@ -1,0 +1,2 @@
+module LakeHelper
+end

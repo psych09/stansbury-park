@@ -1,24 +1,38 @@
 Rails.application.routes.draw do
 
-  get 'clubhouse_pages/general_information'
+  get 'lake/general_information'
 
-  get 'clubhouse_pages/calendar'
+  get 'lake/rules'
 
-  get 'clubhouse_pages/hours'
+  get 'lake/dock_approval'
 
-  get 'clubhouse_pages/reading_room'
+  get 'lake/mowing_schedule'
 
-  get 'clubhouse_pages/meeting_minutes'
+  get 'lake/fishing'
 
-  get 'clubhouse_pages/rental_rules'
+  get 'lake/millpond'
 
-  get 'clubhouse_pages/rental_fees'
+  get 'lake/feeding_waterfowl'
 
-  get 'clubhouse_pages/rental_contact'
+  get 'clubhouse/general_information'
 
-  get 'clubhouse_pages/policy'
+  get 'clubhouse/calendar'
 
-  get 'clubhouse_pages/check_out_list'
+  get 'clubhouse/hours'
+
+  get 'clubhouse/reading_room'
+
+  get 'clubhouse/meeting_minutes'
+
+  get 'clubhouse/rental_rules'
+
+  get 'clubhouse/rental_fees'
+
+  get 'clubhouse/rental_contact'
+
+  get 'clubhouse/policy'
+
+  get 'clubhouse/check_out_list'
 
   get 'about', to: 'pages#about'
   

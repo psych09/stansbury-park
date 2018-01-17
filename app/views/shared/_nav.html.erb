@@ -16,20 +16,20 @@
         <a class="nav-link dropdown-toggle " href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clubhouse</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <h6 class="dropdown-header">Information</h6>
-            <%= link_to "General Information", clubhouse_pages_general_information_path, :class => "dropdown-item" %>
-            <%= link_to "Clubhouse Calendar", clubhouse_pages_calendar_path, :class => "dropdown-item" %>
-            <%= link_to "Hours of Operation", clubhouse_pages_hours_path, :class => "dropdown-item" %>
-            <%= link_to "Reading Room", clubhouse_pages_reading_room_path, :class => "dropdown-item" %>
+            <%= link_to "General Information", clubhouse_general_information_path, :class => "dropdown-item" %>
+            <%= link_to "Clubhouse Calendar", clubhouse_calendar_path, :class => "dropdown-item" %>
+            <%= link_to "Hours of Operation", clubhouse_hours_path, :class => "dropdown-item" %>
+            <%= link_to "Reading Room", clubhouse_reading_room_path, :class => "dropdown-item" %>
             <a class="dropdown-item" href="https://utah.gov/pmn/index.html" target="_blank">Meeting Minutes</a>
             
           <div class="dropdown-divider"></div>
           
           <h6 class="dropdown-header">Rental</h6>
-            <%= link_to "Rental Rules", clubhouse_pages_rental_rules_path, :class => "dropdown-item" %>
-            <%= link_to "Rental Fees", clubhouse_pages_rental_fees_path, :class => "dropdown-item" %>
-            <%= link_to "Contact for Rental/Scheduling", clubhouse_pages_rental_contact_path, :class => "dropdown-item" %>
-            <%= link_to "Clubhouse Policy", clubhouse_pages_policy_path, :class => "dropdown-item" %>
-            <%= link_to "Cleaning/Check-Out List", clubhouse_pages_check_out_list_path, :class => "dropdown-item" %>
+            <%= link_to "Rental Rules", clubhouse_rental_rules_path, :class => "dropdown-item" %>
+            <%= link_to "Rental Fees", clubhouse_rental_fees_path, :class => "dropdown-item" %>
+            <%= link_to "Contact for Rental/Scheduling", clubhouse_rental_contact_path, :class => "dropdown-item" %>
+            <%= link_to "Clubhouse Policy", clubhouse_policy_path, :class => "dropdown-item" %>
+            <%= link_to "Cleaning/Check-Out List", clubhouse_check_out_list_path, :class => "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item">
@@ -38,9 +38,13 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lake</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <%= link_to "General Information", lake_general_information_path, :class => "dropdown-item" %>
+          <%= link_to "Rules", lake_rules_path, :class => "dropdown-item" %>
+          <%= link_to "Private Boat Dock Approval", lake_dock_approval_path, :class => "dropdown-item" %>
+          <%= link_to "Lake Mowing Schedule", lake_mowing_schedule_path, :class => "dropdown-item" %>
+          <%= link_to "Fishing",  lake_fishing_path, :class => "dropdown-item" %>
+          <%= link_to "Millpond", lake_millpond_path, :class => "dropdown-item" %>
+          <%= link_to "Feeding the Waterfowl", lake_feeding_waterfowl_path, :class => "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item dropdown">
