@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'parks/general_information'
+
+  get 'parks/all_parks'
+
+  get 'parks/rules'
+
+  get 'parks/hours'
+
+  get 'parks/pavilion_fees'
+
+  get 'parks/sports_policy'
+
+  get 'parks/sports_facility_agreement'
+
   get 'swimming_pool/general_information'
 
   get 'swimming_pool/rules'

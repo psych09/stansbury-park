@@ -62,9 +62,11 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parks</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <%= link_to "General Information",   parks_general_information_path, :class => "dropdown-item" %>
+          <%= link_to "All Parks", parks_all_parks_path, :class => "dropdown-item" %>
+          <%= link_to "Park Rules",  parks_rules_path, :class => "dropdown-item" %>
+          <%= link_to "Hours of Operation", parks_hours_path, :class => "dropdown-item" %>
+          <%= link_to "Pavilion Rental Fees", parks_pavilion_fees_path, :class => "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item">
@@ -74,7 +76,7 @@
         <%= link_to "Cemetery", cemetery_path, :class => "nav-link #{active? cemetery_path}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "S.P.O.C.", spoc_path, :class => "nav-link #{active? cemetery_path}" %>
+        <%= link_to "S.P.O.C.", spoc_path, :class => "nav-link #{active? spoc_path}" %>
       </li>
       <li class="nav-item">
         <%= link_to "Community Links", community_links_path, :class => "nav-link #{active? community_links_path}" %>

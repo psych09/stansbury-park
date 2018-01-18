@@ -19,8 +19,7 @@ body {
 }
 
 /* Custom Styles */
-
-.card {
+.main-card-layout > .card {
   padding: 20px;
   margin: 10px;
 }
@@ -62,4 +61,18 @@ body {
 
 .no-list-style {
   list-style: none;
+}
+
+
+
+.contact-card:hover {
+  text-decoration: none;
+}
+
+.contact-table > table {
+  width: 100%;
+}
+
+.contact-table > table > tbody > tr > td {
+  border-top: 1px solid #ddd;
 }
