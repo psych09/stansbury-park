@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :bulletins
   get 'parks/general_information'
 
   get 'parks/all_parks'
