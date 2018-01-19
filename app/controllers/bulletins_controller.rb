@@ -39,7 +39,14 @@ class BulletinsController < ApplicationController
     end
   end
   
-  
+  def destroy
+    @bulletin_post = Bulletin.find(params[:id])
+    
+    @bulletin_post.destroy
+    respond_to do |format|
+      format.html { redirect_to bulletins_url, notice: 'Post was removed' }
+    end
+  end
   
   
   
