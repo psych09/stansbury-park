@@ -3,6 +3,10 @@ class BulletinsController < ApplicationController
     @bulletin_posts = Bulletin.all
   end
   
+  def show
+    @bulletin_post = Bulletin.find(params[:id])
+  end
+  
   def new
     @bulletin_post = Bulletin.new
   end

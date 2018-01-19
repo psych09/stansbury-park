@@ -1,0 +1,12 @@
+<%= render 'shared/nav' %>
+
+<div class="main-card-layout">
+  <div class="card">
+    <%= image_tag @bulletin_post.main_image %>
+
+    <h1><%= @bulletin_post.title %></h1>
+    
+    <%= @bulletin_post.body %>
+  </div>
+</div>
+
