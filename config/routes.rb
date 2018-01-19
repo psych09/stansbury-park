@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :bulletins
+  resources :bulletins, except: [:show]
+  get 'bulletin/:id', to: 'bulletins#show', as: 'bulletin_show'
   
   get 'parks/general_information'
 
