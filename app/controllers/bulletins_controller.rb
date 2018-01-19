@@ -19,6 +19,26 @@ class BulletinsController < ApplicationController
     end
   end
   
+  def edit
+    @bulletin_post = Bulletin.find(params[:id])
+  end
+  
+  def update
+    @bulletin_post = Bulletin.find(params[:id])
+    
+    respond_to do |format|
+      if @bulletin_post.update(bulletin_params)
+        format.html { redirect_to bulletins_path, notice: 'Your post was successfully updated.' }
+      else
+        format.html { render :edit }
+      end
+    end
+  end
+  
+  
+  
+  
+  
   private
   
     def bulletin_params
