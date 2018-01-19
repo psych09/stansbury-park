@@ -1,0 +1,9 @@
+<%= render 'shared/nav' %>
+
+<h1>Bulletin Board</h1>
+
+<% @bulletin_posts.each do |bulletin_post| %>
+  <p><%= bulletin_post.title %></p>
+  <p><%= bulletin_post.body %></p>
+  <p><%= image_tag bulletin_post.thumb_image %></p>
+<% end %>
