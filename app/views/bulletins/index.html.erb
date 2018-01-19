@@ -5,5 +5,5 @@
 <% @bulletin_posts.each do |bulletin_post| %>
   <p><%= bulletin_post.title %></p>
   <p><%= bulletin_post.body %></p>
-  <p><%= image_tag bulletin_post.thumb_image %></p>
+  <p><%= image_tag bulletin_post.thumb_image unless bulletin_post.thumb_image.nil? %></p>
 <% end %>
