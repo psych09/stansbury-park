@@ -6,6 +6,7 @@
   </div>
   
   <div class="card">
+    <h2>Hi, <%= current_user.first_name if current_user %></h2>
     <%= link_to "Create New Post", new_bulletin_path %>
   </div>
   
