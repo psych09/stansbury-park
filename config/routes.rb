@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :bulletins, except: [:show]
   get 'bulletin/:id', to: 'bulletins#show', as: 'bulletin_show'
   
