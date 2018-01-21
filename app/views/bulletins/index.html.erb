@@ -3,11 +3,18 @@
     <h1>Bulletin Board</h1>
   </div>
   
-  <div class="card">
-    <h2>Hi, <%= current_user.first_name if current_user %></h2>
-    <%= link_to "Create New Post", new_bulletin_path if logged_in?(:site_admin) %>
-  </div>
-  
+  <% if user_signed_in? %>
+    <%= content_tag :div, class: "card" do %>
+      <%= content_tag :h2 do %>
+        Hi, <%= current_user.first_name %>
+      <% end %>
+      
+      <%= link_to "Create New Post", new_bulletin_path if logged_in?(:site_admin) %>
+    <% end %>
+  <% else %>
+    <% nil %>
+  <% end %>
+
   <% @bulletin_posts.each do |bulletin_post| %>
     <div class ="card">
       <h4><%= link_to bulletin_post.title, bulletin_show_path(bulletin_post.id) %></h4>
