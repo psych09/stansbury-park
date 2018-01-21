@@ -1,19 +1,5 @@
 <h1>Edit this Bulletin Post</h1>
 
-<%= form_for(@bulletin_post) do |f| %>
-   <div class="field">
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-   </div>
-   
-   <div class="field">
-      <%= f.label :body %>
-      <%= f.text_field :body %>
-   </div>
-   
-   <div class="actions">
-      <%= f.submit %>
-   </div>
-<% end %>
+<%= render 'form', bulletin_post: @bulletin_post %>
   
   
