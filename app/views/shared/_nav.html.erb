@@ -17,6 +17,9 @@
       <li class="nav-item">
         <%= link_to "About", about_path, :class => "nav-link #{active? about_path}" %>
       </li>
+      <li class="nav-item">
+        <%= link_to "Meeting Minutes", meeting_minutes_path, :class => "nav-link #{active? meeting_minutes_path}" %>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle " href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clubhouse</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -25,7 +28,6 @@
             <%= link_to "Clubhouse Calendar", clubhouse_calendar_path, :class => "dropdown-item" %>
             <%= link_to "Hours of Operation", clubhouse_hours_path, :class => "dropdown-item" %>
             <%= link_to "Reading Room", clubhouse_reading_room_path, :class => "dropdown-item" %>
-            <a class="dropdown-item" href="https://utah.gov/pmn/index.html" target="_blank">Meeting Minutes</a>
             
           <div class="dropdown-divider"></div>
           

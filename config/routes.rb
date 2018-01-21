@@ -54,8 +54,6 @@ Rails.application.routes.draw do
 
   get 'clubhouse/reading_room'
 
-  get 'clubhouse/meeting_minutes'
-
   get 'clubhouse/rental_rules'
 
   get 'clubhouse/rental_fees'
@@ -71,6 +69,8 @@ Rails.application.routes.draw do
   get 'clubhouse', to: 'pages#clubhouse'
   
   get 'greenbelts', to: 'pages#greenbelts'
+  
+  get 'meeting_minutes', to: 'pages#meeting_minutes'
   
   get 'lake', to: 'pages#lake'
   

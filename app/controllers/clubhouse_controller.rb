@@ -11,9 +11,6 @@ class ClubhouseController < ApplicationController
   def reading_room
   end
 
-  def meeting_minutes
-  end
-
   def rental_rules
   end
 
