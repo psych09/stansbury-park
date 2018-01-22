@@ -32,15 +32,21 @@
           <div class="dropdown-divider"></div>
           
           <h6 class="dropdown-header">Rental</h6>
+            <%= link_to "Clubhouse Policy", clubhouse_policy_path, :class => "dropdown-item" %>
             <%= link_to "Rental Rules", clubhouse_rental_rules_path, :class => "dropdown-item" %>
             <%= link_to "Rental Fees", clubhouse_rental_fees_path, :class => "dropdown-item" %>
             <%= link_to "Contact for Rental/Scheduling", clubhouse_rental_contact_path, :class => "dropdown-item" %>
-            <%= link_to "Clubhouse Policy", clubhouse_policy_path, :class => "dropdown-item" %>
             <%= link_to "Cleaning/Check-Out List", clubhouse_check_out_list_path, :class => "dropdown-item" %>
         </div>
       </li>
-      <li class="nav-item">
-        <%= link_to "Greenbelts", greenbelts_path, :class => "nav-link #{active? greenbelts_path}" %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Greenbelts</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <%= link_to "General Information", greenbelt_general_information_path, :class => "dropdown-item" %>
+          <%= link_to "Rules", greenbelt_rules_path, :class => "dropdown-item" %>
+          <%= link_to "Millpond Nature Trail", greenbelt_millpond_trail_path, :class => "dropdown-item" %>
+          
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lake</a>

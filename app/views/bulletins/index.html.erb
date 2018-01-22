@@ -14,16 +14,24 @@
   <% else %>
     <% nil %>
   <% end %>
-
-  <% @bulletin_posts.each do |bulletin_post| %>
-    <div class ="card">
-      <h4><%= link_to bulletin_post.title, bulletin_show_path(bulletin_post.id) %></h4>
-      <p><%= bulletin_post.body %></p>
-      <p><%= image_tag bulletin_post.thumb_image unless bulletin_post.thumb_image.nil? %></p>
-      <%= link_to "Edit", edit_bulletin_path(bulletin_post.id) if logged_in?(:site_admin) %>
-      <%= link_to "Delete", bulletin_path(bulletin_post), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
-    </div>
-  <% end %>
   
+  
+  <div class="row">
+    <% @bulletin_posts.each do |bulletin_post| %>
+      <div class="col-md-3 post">
+        <div class="card">
+          <%= image_tag bulletin_post.thumb_image, :class => "car-img-top", :style => "width: 100%" %>
+            <div class="card-body">
+              <h4><%= link_to bulletin_post.title, bulletin_show_path(bulletin_post.id) %></h4>
+              <p class="card-text text-left"><%= bulletin_post.body %></p>
+              <div>
+                <%= link_to "Edit", edit_bulletin_path(bulletin_post.id) if logged_in?(:site_admin) %> | 
+                <%= link_to "Delete", bulletin_path(bulletin_post), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+              </div>  
+            </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
   

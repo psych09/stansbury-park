@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'greenbelt/general_information'
+
+  get 'greenbelt/rules'
+
+  get 'greenbelt/millpond_trail'
+
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   resources :bulletins, except: [:show]
   get 'bulletin/:id', to: 'bulletins#show', as: 'bulletin_show'
