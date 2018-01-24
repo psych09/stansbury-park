@@ -9,13 +9,17 @@ body {
 }
 
 /* Fonts */
-
 h1 {
   font-family: 'Poppins', sans-serif;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
+}
+
+/* Nav Bar */
+.nav-item {
+  margin: 0px 10px 0px 0px;
 }
 
 /* Custom Styles */
@@ -28,9 +32,7 @@ body {
  padding: 10px;
 }
 
-.nav-item {
-  margin: 0px 10px 0px 0px;
-}
+
 
 #background {
   position: fixed;
@@ -52,6 +54,48 @@ body {
   width: 40px;
 }
 
-.post > .card {
-  margin-top: 20px;
+/* Colums and posts */
+
+#columns {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-count: 3;
+  column-gap: 10px;
+  column-fill: auto;
 }
+
+.post {
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+}
+
+.post:hover {
+  background: #fff;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .5s ease;
+}
+
+.post > h4:hover {
+  color: black;
+}
+
+.car-img-top {
+  width: 100%;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
