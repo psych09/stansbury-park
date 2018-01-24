@@ -91,43 +91,44 @@
       <li class="nav-item">
         <%= link_to "S.P.O.C.", spoc_path, :class => "nav-link #{active? spoc_path}" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Community Links", community_links_path, :class => "nav-link #{active? community_links_path}" %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown06">
+          
+          <h6 class="dropdown-header">General</h6>
+          <%= link_to "Employment Application", asset_path("Employment_Application.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          <%= link_to "Sign Approval", asset_path("Sign_Approval_Form.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          
+          <div class="dropdown-divider"></div>
+          
+          <h6 class="dropdown-header">Clubhouse</h6>
+          <%= link_to "Clubhouse Free Use Agreement", asset_path("Clubhouse_Free_Use_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          <%= link_to "Clubhouse Rental Agreement", asset_path("Stansbury_Park_Clubhouse_Rental_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          
+          <div class="dropdown-divider"></div>
+          
+          <h6 class="dropdown-header">Lake</h6>
+          <%= link_to "Watercraft Registration", asset_path("Boat_Registration.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          
+          <div class="dropdown-divider"></div>
+          
+          <h6 class="dropdown-header">Parks</h6>
+          <%= link_to "Pavilion Rental Agreement", asset_path("Pavilions_Rental_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          <%= link_to "Bounce House Policy/Use Agreement", asset_path("Bounce_House_Policy.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          
+          <div class="dropdown-divider"></div>
+          
+          <h6 class="dropdown-header">Sports</h6>
+          <%= link_to "Organized Sports Policy", asset_path("Organized_Sports_Policy.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          <%= link_to "Sports Facility Use Agreement", asset_path("Sports_Facility_Use_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
+        </div>
       </li>
       <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown06">
-              
-              <h6 class="dropdown-header">General</h6>
-              <%= link_to "Employment Application", asset_path("Employment_Application.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              <%= link_to "Sign Approval", asset_path("Sign_Approval_Form.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              
-              <div class="dropdown-divider"></div>
-              
-              <h6 class="dropdown-header">Clubhouse</h6>
-              <%= link_to "Clubhouse Free Use Agreement", asset_path("Clubhouse_Free_Use_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              <%= link_to "Clubhouse Rental Agreement", asset_path("Stansbury_Park_Clubhouse_Rental_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              
-              <div class="dropdown-divider"></div>
-              
-              <h6 class="dropdown-header">Lake</h6>
-              <%= link_to "Watercraft Registration", asset_path("Boat_Registration.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              
-              <div class="dropdown-divider"></div>
-              
-              <h6 class="dropdown-header">Parks</h6>
-              <%= link_to "Pavilion Rental Agreement", asset_path("Pavilions_Rental_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              <%= link_to "Bounce House Policy/Use Agreement", asset_path("Bounce_House_Policy.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              
-              <div class="dropdown-divider"></div>
-              
-              <h6 class="dropdown-header">Sports</h6>
-              <%= link_to "Organized Sports Policy", asset_path("Organized_Sports_Policy.pdf"), :class => "dropdown-item", :target => "_blank" %>
-              <%= link_to "Sports Facility Use Agreement", asset_path("Sports_Facility_Use_Agreement.pdf"), :class => "dropdown-item", :target => "_blank" %>
-            </div>
-          </li>
-      <li class="nav-item">
-        <%= link_to "Contact Us", contact_path, :class => "nav-link #{active? contact_path}" %>
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown07">
+          <%= link_to "Service Agency",   contact_service_agency_path, :class => "dropdown-item" %>
+          <%= link_to "Community Links", contact_community_links_path, :class => "dropdown-item" %>
+        </div>
       </li>
     </ul>
     
