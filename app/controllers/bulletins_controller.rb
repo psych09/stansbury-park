@@ -4,7 +4,7 @@ class BulletinsController < ApplicationController
   layout "bulletin"
   
   def index
-    @bulletin_posts = Bulletin.all
+    @bulletin_posts = Bulletin.by_position
   end
   
   def show

@@ -3,6 +3,10 @@ class Bulletin < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
   
+  def self.by_position
+    order("position ASC")
+  end
+  
   after_initialize :set_defaults
   
   def set_defaults
