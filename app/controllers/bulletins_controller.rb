@@ -7,6 +7,14 @@ class BulletinsController < ApplicationController
     @bulletin_posts = Bulletin.by_position
   end
   
+  def sort
+    params[:order].each do |key, value|
+      Bulletin.find(value[:id]).update(position: value[:position])
+    end
+    
+    render body: nil
+  end
+  
   def show
   end
   

@@ -85,7 +85,7 @@ body {
   transition: all .5s ease;
 }
 
-.post > h4:hover {
+.header a {
   color: black;
 }
 
@@ -99,3 +99,22 @@ body {
   border-top-right-radius: 5px;
 }
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  
+  #title {
+    font-size: .90em;
+  }
+  
+  #columns {
+  -webkit-column-count: 1;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 1;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-count: 1;
+  column-gap: 10px;
+  column-fill: auto;
+}
+}

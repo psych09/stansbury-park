@@ -18,19 +18,7 @@
   
   <div id="container">
     <div id="columns" class="sortable">
-      <% @bulletin_posts.each do |bulletin_post| %>
-        <div class="card post">
-          <%= image_tag bulletin_post.thumb_image, :class => "car-img-top" %>
-          <div class="card-body">
-            <h4><%= link_to bulletin_post.title, bulletin_show_path(bulletin_post.id) %></h4>
-            <p class="card-text text-left"><%= bulletin_post.body %></p>
-            <div>
-              <%= link_to "Edit", edit_bulletin_path(bulletin_post.id), :class => "btn btn-primary" if logged_in?(:site_admin) %> 
-              <%= link_to "Delete", bulletin_path(bulletin_post), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" if logged_in?(:site_admin) %>
-            </div>  
-          </div>
-        </div>
-      <% end %>
+      <%= render partial: 'bulletin_post', collection: @bulletin_posts %>
     </div>
   </div>
 </div>
