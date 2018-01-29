@@ -1,4 +1,6 @@
 class LakeController < ApplicationController
+  layout "lake"
+  
   def general_information
   end
 

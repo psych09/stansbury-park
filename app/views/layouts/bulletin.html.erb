@@ -23,15 +23,7 @@
     <main role="main" class="container">
       <div class="starter-template">
         
-        <%= video_tag(
-            'Duck-Duck-Go.mp4',
-            id: 'background',
-            autoplay: true,
-            loop: true,
-            muted: true,
-            poster: 'Duck-Duck-Go.jpg'
-          )
-        %>
+        <%= video_tag_helper 'Up.mp4', 'Up.jpg' %>
         
         <%= yield %>
         

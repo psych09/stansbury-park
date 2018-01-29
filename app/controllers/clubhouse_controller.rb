@@ -1,4 +1,6 @@
 class ClubhouseController < ApplicationController
+  layout "clubhouse"
+  
   def general_information
   end
 

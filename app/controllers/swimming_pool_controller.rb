@@ -1,4 +1,6 @@
 class SwimmingPoolController < ApplicationController
+  layout "swimming_pool"
+  
   def general_information
   end
 

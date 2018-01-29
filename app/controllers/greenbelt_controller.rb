@@ -1,4 +1,6 @@
 class GreenbeltController < ApplicationController
+  layout "greenbelt"
+  
   def general_information
   end
 

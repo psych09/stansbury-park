@@ -1,4 +1,6 @@
 class ParksController < ApplicationController
+  layout "parks"
+  
   def general_information
   end
 
