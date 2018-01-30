@@ -3,10 +3,77 @@
 <div class="main-card-layout">
   
   <div class="card">
-    <h1>All Parks</h1>
+    <h1>Community Parks</h1>
   </div>
   
   <div class="card">
-    
+    <div id="mapid"></div>
+    <script>
+      var mymap = L.map('mapid').setView([40.642650, -112.302380], 14);
+      
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamVkZmx5bm4wOSIsImEiOiJjamQxNWNjZm8xN2h3MzJwNHYxajk3a3RwIn0.ed9-wvuaXRgt923aypOpCg', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox.streets',
+          accessToken: 'your.mapbox.access.token'
+      }).addTo(mymap);
+      
+      var porterway = L.polygon([
+        [40.648324, -112.311221],
+        [40.650143, -112.307112],
+        [40.649406, -112.306667],
+        [40.647778, -112.307227],
+        [40.645881, -112.305927],
+        [40.645390, -112.307165],
+        [40.646799, -112.308139],
+        [40.647190, -112.310425]
+      ]).addTo(mymap);
+      
+      var brigham = L.polygon([
+        [40.652923, -112.299910],
+        [40.653074, -112.299697],
+        [40.652945, -112.299504],
+        [40.652834, -112.299296],
+        [40.652558, -112.298774],
+        [40.652538, -112.298746],
+        [40.652298, -112.299132],
+        [40.652422, -112.299301],
+        [40.652492, -112.299605],
+        [40.652551, -112.299704],
+        [40.652612, -112.299770],
+        [40.652701, -112.299818],
+        [40.652812, -112.299845],
+        [40.652871, -112.299872]
+      ]).addTo(mymap);
+      
+      var gateway = L.polygon([
+        [40.649069, -112.292370],
+        [40.649448, -112.291771],
+        [40.649335, -112.291673],
+        [40.649238, -112.291598],
+        [40.649149, -112.291546],
+        [40.649066, -112.291506],
+        [40.648974, -112.291475],
+        [40.648891, -112.291457],
+        [40.648795, -112.291450],
+        [40.648795, -112.291450],
+        [40.648754, -112.291463],
+        [40.648742, -112.291472],
+        [40.648735, -112.291488],
+        [40.648727, -112.291518],
+        [40.648723, -112.291627],
+        [40.648724, -112.291748],
+        [40.648737, -112.291845],
+        [40.648766, -112.291959],
+        [40.648810, -112.292057],
+        [40.648836, -112.292102],
+        [40.648875, -112.292159],
+        [40.648941, -112.292231]
+      ]).addTo(mymap);
+      
+      porterway.bindPopup("<h3>Porter Way Park</h3>")
+      brigham.bindPopup("<h3>Brigham Park</h3>")
+      
+    </script>
   </div>
 </div>
