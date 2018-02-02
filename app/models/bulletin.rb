@@ -1,7 +1,5 @@
 class Bulletin < ApplicationRecord
   validates_presence_of :title, :body, :main_image, :thumb_image
-  extend FriendlyId
-  friendly_id :title, use: :slugged
   
   def self.by_position
     order("position ASC")

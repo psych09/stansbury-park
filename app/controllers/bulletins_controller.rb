@@ -4,7 +4,7 @@ class BulletinsController < ApplicationController
   layout "bulletin"
   
   def index
-    @bulletin_posts = Bulletin.by_position
+    @bulletins = Bulletin.by_position
   end
   
   def sort
@@ -59,7 +59,7 @@ class BulletinsController < ApplicationController
   private
   
     def set_bulletin_post
-      @bulletin_post = Bulletin.friendly.find(params[:id])
+      @bulletin_post = Bulletin.find(params[:id])
     end
   
     def bulletin_params

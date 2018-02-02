@@ -17,8 +17,20 @@
   
   
   <div class="container">
-    <div id="columns" class="<%= "sortable" if logged_in?(:site_admin) %>">
-      <%= render partial: 'bulletin_post', collection: @bulletin_posts %>
+    <div class="row sortable">
+      <% @bulletins.each do |item| %>
+        <div class="card post" data-id="<%= item.id %>">
+          <%= image_tag item.thumb_image, :class => "car-img-top" %>
+          <div class="card-body">
+            <h4 class="header"><%= link_to item.title, bulletin_show_path(item.id) %></h4>
+            <p class="card-text text-left"><%= item.body %></p>
+            <div>
+              <%= link_to "Edit", edit_bulletin_path(item.id), :class => "btn btn-primary" if logged_in?(:site_admin) %> 
+              <%= link_to "Delete", bulletin_path(item), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" if logged_in?(:site_admin) %>
+            </div>  
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
