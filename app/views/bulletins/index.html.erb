@@ -16,8 +16,8 @@
   <% end %>
   
   
-  <div id="container">
-    <div id="columns" class="sortable">
+  <div class="container">
+    <div id="columns" class="<%= "sortable" if logged_in?(:site_admin) %>">
       <%= render partial: 'bulletin_post', collection: @bulletin_posts %>
     </div>
   </div>

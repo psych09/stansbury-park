@@ -12,7 +12,7 @@ class BulletinsController < ApplicationController
       Bulletin.find(value[:id]).update(position: value[:position])
     end
     
-    render body: nil
+    render nothing: true
   end
   
   def show
@@ -63,6 +63,6 @@ class BulletinsController < ApplicationController
     end
   
     def bulletin_params
-      params.require(:bulletin).permit(:title, :body)
+      params.require(:bulletin).permit(:title, :body, :main_image, :thumb_image, :position)
     end
 end
