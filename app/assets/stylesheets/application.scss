@@ -95,5 +95,10 @@ body {
 /* Leaflet Map */
 
 #mapid {
-  height: 500px;
+  height: 50vh;
+}
+
+#mapid .leaflet-map-pane .leaflet-overlay-pane svg path {
+  fill: #06822E;
+  stroke: #06822E;
 }

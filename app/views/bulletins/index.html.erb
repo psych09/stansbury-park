@@ -17,7 +17,7 @@
   
   
   <div class="container">
-    <div class="row sortable">
+    <div id="columns" class="sortable">
       <% @bulletins.each do |item| %>
         <div class="card post" data-id="<%= item.id %>">
           <%= image_tag item.thumb_image, :class => "car-img-top" %>
