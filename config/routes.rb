@@ -22,44 +22,6 @@ Rails.application.routes.draw do
   get 'parks/general_information'
 
   get 'parks/all_parks'
-  
-  get 'parks/porterway'
-  
-  get 'parks/brigham'
-  
-  get 'parks/gateway'
-  
-  get 'parks/sagers'
-  
-  get 'parks/millpond'
-  
-  get 'parks/clubhouse'
-  
-  get 'parks/island'
-  
-  get 'parks/delgada'
-  
-  get 'parks/northport'
-  
-  get 'parks/parkview'
-  
-  get 'parks/regatta'
-  
-  get 'parks/galley'
-  
-  get 'parks/ponderosa'
-  
-  get 'parks/village'
-  
-  get 'parks/sandhill'
-  
-  get 'parks/sutton'
-  
-  get 'parks/woodland'
-  
-  get 'parks/rose'
-  
-  get 'parks/fairway'
 
   get 'parks/rules'
 

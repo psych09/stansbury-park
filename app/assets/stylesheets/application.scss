@@ -102,3 +102,8 @@ body {
   fill: #06822E;
   stroke: #06822E;
 }
+
+#mapid .leaflet-map-pane .leaflet-overlay-pane svg path:hover {
+  stroke: black;
+}
+

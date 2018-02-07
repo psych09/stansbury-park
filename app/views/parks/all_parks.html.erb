@@ -16,6 +16,7 @@
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamVkZmx5bm4wOSIsImEiOiJjamQxNWNjZm8xN2h3MzJwNHYxajk3a3RwIn0.ed9-wvuaXRgt923aypOpCg', {
           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
           maxZoom: 18,
+          minZoom: 14,
           id: 'mapbox.streets',
           accessToken: 'pk.eyJ1IjoiamVkZmx5bm4wOSIsImEiOiJjamQxNWNjZm8xN2h3MzJwNHYxajk3a3RwIn0.ed9-wvuaXRgt923aypOpCg'
       }).addTo(mymap);
@@ -464,81 +465,606 @@
       ]).addTo(mymap);
       
       porterway.addEventListener("click", function() {
-        window.open("porterway");
+        $("#porterway").modal("toggle");
       });
       
       brigham.addEventListener("click", function() {
-        window.open("brigham");
+        $("#brigham").modal("toggle");
       });
       
       gateway.addEventListener("click", function() {
-        window.open("gateway");
+        $("#gateway").modal("toggle");
       });
       
       sagers.addEventListener("click", function() {
-        window.open("sagers");
+        $("#sagers").modal("toggle");
       });
       
       millpond.addEventListener("click", function() {
-        window.open("millpond");
+        $("#millpond").modal("toggle");
       });
       
       clubhouse.addEventListener("click", function() {
-        window.open("clubhouse");
+        $("#clubhouse").modal("toggle");
       });
       
       island.addEventListener("click", function() {
-        window.open("island");
+        $("#island").modal("toggle");
       });
       
       delgada.addEventListener("click", function() {
-        window.open("delgada");
+        $("#delgada").modal("toggle");
       });
       
       northport.addEventListener("click", function() {
-        window.open("northport");
+        $("#northport").modal("toggle");
       });
       
       parkview.addEventListener("click", function() {
-        window.open("parkview");
+        $("#parkview").modal("toggle");
       });
       
       regatta.addEventListener("click", function() {
-        window.open("regatta");
+        $("#regatta").modal("toggle");
       });
       
       galley.addEventListener("click", function() {
-        window.open("galley");
+        $("#galley").modal("toggle");
       });
       
       ponderosa.addEventListener("click", function() {
-        window.open("ponderosa");
+        $("#ponderosa").modal("toggle");
       });
       
       village.addEventListener("click", function() {
-        window.open("village");
+        $("#village").modal("toggle");
       });
       
       sandhill.addEventListener("click", function() {
-        window.open("sandhill");
+        $("#sandhill").modal("toggle");
       });
       
       sutton.addEventListener("click", function() {
-        window.open("sutton");
+        $("#sutton").modal("toggle");
       });
       
       woodland.addEventListener("click", function() {
-        window.open("woodland");
+        $("#woodland").modal("toggle");
       });
       
        rose.addEventListener("click", function() {
-        window.open("rose");
+        $("#rose").modal("toggle");
       });
       
        fairway.addEventListener("click", function() {
-        window.open("fairway");
+        $("#fairway").modal("toggle");
       });
 
     </script>
+  </div>
+</div>
+
+<!-- Modals -->
+
+<div class="modal fade" id="porterway" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Porter Way Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Porter Way Park is located at the intersection of Porter Way and Star Discovery Way. At 28 acres, it is the largest community park in Stansbury Park.</p>
+        
+        <p>The following amenities can be found at Porter Way Park:</p>
+        
+        <ul>
+          <li>18 hole Disc Golf Course</li>
+          <li>Fenced Baseball/Softball Diamond</li>
+          <li>Two Tennis Courts</li>
+          <li>A Large Playground (ages 2 to 99)</li>
+          <li>Additional interior Multi-Use Paths</li>
+          <li>Multiple Picnic Areas with Tables</li>
+          <li>Wading Stream</li>
+          <li>Several Soccer/Football Fields</li>
+          <li>Large Pavilion with Bathrooms</li>
+          <li>One mile Multi-Use Path around the exterior of the park.</li>
+        </ul>
+        
+        <p>Future plans for the park include Pickleball Courts, a Basketball Court and an additional Two-Story Pavilion.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="brigham" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Brigham Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Brigham Park is located on Brigham Street, directly north of the Benson Grist Mill and the Stansbury Park Cemetery. It is a small neighborhood park of about 1 acre in size.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Two Covered Picnic Areas</li>
+          <li>Picnic Tables</li>
+          <li>Charcoal Barbeques</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="gateway" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Gateway Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Gateway Park is a small neighborhood park of about 1 acre in size. It is located in the Gateway neighborhood at the intersection of Old Mill Road and Harvest Drive.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>A Large Playground (ages 2 to 12)</li>
+          <li>Basketball Court</li>
+          <li>Large Shade Trees</li>
+          <li>Several Picnic Tables</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sagers" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Sagers Memorial Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Sagers Memorial Park is a large community park located next to the Millpond at #10 Plaza. The Park is named after Ken Sagers, a former Manager of the Stansbury Service Agency.</p>
+        
+        <p>Ken worked for the Agency for many years and kept the parks, greenbelts and other facilities maintained, in a time when there was very little money available to do so. Ken passed away in 1995, at which time the park was named in his honor.</p>
+        
+        <p>SPOC (Stansbury Park Observatory Complex) is located within the boundaries of this park. It houses four of the largest telescopes in Utah. The public is invited to join the Salt Lake Astronomical Society, at one of the many Star Parties they host each summer, to view the night sky through these telescopes. Go to slas.us for more information about SPOC and the Star Parties.</p>
+        
+        <p>Other amenities at this park Include:</p>
+        
+        <ul>
+          <li>Skateboard and Scooter Course</li>
+          <li>Small Pavilion (no reservations)</li>
+          <li>Large Playground (ages 2-12)</li>
+          <li>Large Shade Trees</li>
+          <li>Four Little League Baseball/Softball Diamonds</li>
+          <li>Batting Cage</li>
+          <li>Bathrooms</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="millpond" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Millpond Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Millpond Park is located at the headwaters of the Millpond near the intersection of the Frontage Road and Clubhouse Drive.</p>
+        
+        <p>At the current time there are no amenities in the park, but the contour of the land is perfect for sledding in the winter and ice blocking in the summer.</p>
+        
+        <p>Future plans for the park include an outdoor stage and amphitheater, walking paths, picnic facilities, off street parking and bathrooms.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="clubhouse" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Clubhouse Complex</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>The Clubhouse Complex is the area surrounding the Clubhouse, adjacent to Stansbury Lake. It is located across the street from the Golf Course Pro Shop, at #1 Country Club Drive.</p>
+        
+        <p>The amenities in this complex include:</p>
+        
+        <ul>
+          <li>Clubhouse Event Center</li>
+          <li>Lake Access</li>
+          <li>Boat Ramp for Launching Watercraft</li>
+          <li>Boat Dock</li>
+          <li>Access to the Lake for Swimming</li>
+          <li>Gazebo Style Pavilion with Picnic Tables</li>
+          <li>Sport Court</li>
+          <li>Public Swimming Pool</li>
+          <li>Grass Volleyball Court</li>
+          <li>Walking Paths and Benches</li>
+          <li>Bridge Across the Millpond to Sagers Memorial Park</li>
+          <li>Bathrooms</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="island" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Captains Island Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Captains Island Park is located in the turnabout at the North end of the Island. It is a very small neighborhood with no mature trees and limited amenities.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Small Playground (ages 2-12)</li>
+          <li>Several Park Benches</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="delgada" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Delgada Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Delgada Park is located on the North shore of Stansbury Lake on Delgada Way. Across the street from the park is a peninsula that extends into the Millpond. The peninsula boasts a nature trail with the best bird watching vantage points in the community.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Lake Access</li>
+          <li>Boat Dock</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="northport" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Northport Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Northport Park is located on the West shore of Stansbury Lake on Delgada Way.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Lake Access</li>
+          <li>Boat Ramp</li>
+          <li>Basketball Courts</li>
+          <li>Picnic Tables</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="parkview" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Park View Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Parkview Park is a large Community park located at the intersection of Parkview Drive and Regatta Lane.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Play ground (ages 2-12)</li>
+          <li>Horseshoe Pits</li>
+          <li>Basketball Court</li>
+          <li>Walking Paths</li>
+          <li>Picnic Tables</li>
+          <li>Several Soccer Fields</li>
+          <li>Bathrooms</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="regatta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Regatta Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Regatta Park is only about one half acre in size. It is located at the intersection of Regatta Lane and Bayshore Drive. It has no amenities or shade trees. One side of the park has a small slope which could serve as a sledding hill, in the winter, for young children.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="galley" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Galley Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Galley Park is a small neighborhood park of about one acre in size. It is located at the intersection of Galley Lane and Regatta Lane.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Small Playground (ages 2-12)</li>
+          <li>Park Benches</li>
+          <li>Picnic Tables</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ponderosa" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ponderosa Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Ponderosa Park is located at the intersection of Ponderosa Lane and Horseshoe Drive. It is a small neighborhood park of about 1 acre in size.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Small Playground (ages 2-12)</li>
+          <li>Park Benches</li>
+          <li>Picnic Tables</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="village" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Village Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Village Park is a large community park located at the intersection of Village Blvd. and Stallion Way.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Several Full Size Football/Soccer Fields</li>
+          <li>Two Softball/Baseball Back Stops</li>
+          <li>Small Playground (ages 2-12)</li>
+          <li>Park Benches</li>
+          <li>Bathrooms</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sandhill" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Sandhill Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Sandhill Park is located at the intersection of Sandhill Way and Calais Lane. It has no amenities other than a full size soccer field. The park is generally used by little league soccer clubs for practice and games.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sutton" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Rex Sutton Memorial Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Sutton Memorial Park is named after Rex Sutton, a long time resident of Stansbury Park, who passed away in 2016. Rex served for many years as a Trustee and as Chairman of the Stansbury Service Agency. He was instrumental in the establishment and development of the park.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Small Playground (ages 2-12)</li>
+          <li>Swings</li>
+          <li>Basketball Court</li>
+          <li>Tetherball Pole</li>
+          <li>Park Benches</li>
+          <li>Picnic Table</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="woodland" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Woodland Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Woodland Park is the oldest park in the Stansbury. It is named for the large stand of cottonwood trees that still exist on the property. The park is located at the intersection of Country Club Drive and Miller Circle.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Large Shade Trees</li>
+          <li>Fire Pit</li>
+          <li>Small Playground (ages 2-12)</li>
+          <li>Basketball Court</li>
+          <li>Park Benches</li>
+          <li>Picnic Tables</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="rose" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Brent Rose Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Rose Park is named after Brent Rose, one of the founders of the Stansbury Service Agency. Brent served for over 15 years as a Trustee of the Service Agency, many of those years as Chairman. He was instrumental in the establishment and development of the park. Rose Park is located across the street from Stansbury Elementary at 485 Country Club Drive.</p>
+        
+        <p>The amenities in this park include:</p>
+        
+        <ul>
+          <li>Two Tennis Courts</li>
+          <li>Picnic Tables</li>
+          <li>Small Soccer Field</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fairway" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Fairway Park</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <p>Fairway Park is a small neighborhood park located next to the Golf Course at 629 Country Club Drive. This park consists of a very small playground and lots of grass.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
