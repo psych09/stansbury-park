@@ -29,7 +29,7 @@ body {
 }
 
 .nav-item {
-  margin: 0px 10px 0px 0px;
+  margin: 0px 5px 0px 5px;
 }
 
 #background {
@@ -90,6 +90,50 @@ body {
 
 .center-element {
   margin: 0 auto;
+}
+
+/* Colums and posts */
+
+#columns {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-count: 3;
+  column-gap: 10px;
+  column-fill: auto;
+}
+
+.post {
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+}
+
+.post:hover {
+  background: #fff;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header a {
+  color: black;
+}
+
+.car-img-top {
+  width: 100%;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 /* Leaflet Map */
@@ -172,4 +216,25 @@ body {
 			}
 		}
 	}
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  
+  #title {
+    font-size: .90em;
+  }
+  
+  #columns {
+  -webkit-column-count: 1;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 1;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-count: 1;
+  column-gap: 10px;
+  column-fill: auto;
+}
+
 }
