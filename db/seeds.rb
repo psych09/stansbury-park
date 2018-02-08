@@ -44,14 +44,3 @@ User.create!(email: "test@test.com",
             )
             
 puts "Site_admin user created"
-
-12.times do |portfolio_item|
-  Portfolio.create!(
-    title: "Bulletin Post #{portfolio_item}",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x200"
-  )
-end
-
-puts "12 Portfolio items created"

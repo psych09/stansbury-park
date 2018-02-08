@@ -3,14 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <%= render 'shared/nav' %>
-    
     <title>StansburyPark</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
     
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway" rel="stylesheet">
     
@@ -19,6 +16,8 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    
+    <%= render 'shared/nav' %>
        
     <main role="main" class="container">
       <div class="starter-template">
