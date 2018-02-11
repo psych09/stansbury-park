@@ -21,65 +21,65 @@
         <%= link_to "Meeting Minutes", meeting_minutes_path, :class => "nav-link #{active? meeting_minutes_path}" %>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle " href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clubhouse</a>
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clubhouse</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <h6 class="dropdown-header">Information</h6>
-            <%= link_to "General Information", clubhouse_general_information_path, :class => "dropdown-item" %>
-            <%= link_to "Clubhouse Calendar", clubhouse_calendar_path, :class => "dropdown-item" %>
-            <%= link_to "Hours of Operation", clubhouse_hours_path, :class => "dropdown-item" %>
-            <%= link_to "Reading Room", clubhouse_reading_room_path, :class => "dropdown-item" %>
+            <%= link_to "General Information", clubhouse_general_information_path, :class => "dropdown-item #{active? clubhouse_general_information_path}" %>
+            <%= link_to "Clubhouse Calendar", clubhouse_calendar_path, :class => "dropdown-item #{active? clubhouse_calendar_path}" %>
+            <%= link_to "Hours of Operation", clubhouse_hours_path, :class => "dropdown-item #{active? clubhouse_hours_path}" %>
+            <%= link_to "Reading Room", clubhouse_reading_room_path, :class => "dropdown-item #{active? clubhouse_reading_room_path}" %>
             
           <div class="dropdown-divider"></div>
           
           <h6 class="dropdown-header">Rental</h6>
-            <%= link_to "Clubhouse Policy", clubhouse_policy_path, :class => "dropdown-item" %>
-            <%= link_to "Rental Rules", clubhouse_rental_rules_path, :class => "dropdown-item" %>
-            <%= link_to "Rental Fees", clubhouse_rental_fees_path, :class => "dropdown-item" %>
-            <%= link_to "Contact for Rental/Scheduling", clubhouse_rental_contact_path, :class => "dropdown-item" %>
-            <%= link_to "Cleaning/Check-Out List", clubhouse_check_out_list_path, :class => "dropdown-item" %>
+            <%= link_to "Clubhouse Policy", clubhouse_policy_path, :class => "dropdown-item #{active? clubhouse_policy_path}" %>
+            <%= link_to "Rental Rules", clubhouse_rental_rules_path, :class => "dropdown-item #{active? clubhouse_rental_rules_path}" %>
+            <%= link_to "Rental Fees", clubhouse_rental_fees_path, :class => "dropdown-item #{active? clubhouse_rental_fees_path}" %>
+            <%= link_to "Contact for Rental/Scheduling", clubhouse_rental_contact_path, :class => "dropdown-item #{active? clubhouse_rental_contact_path}" %>
+            <%= link_to "Cleaning/Check-Out List", clubhouse_check_out_list_path, :class => "dropdown-item #{active? clubhouse_check_out_list_path}" %>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Greenbelts</a>
         <div class="dropdown-menu" aria-labelledby="dropdown02">
-          <%= link_to "General Information", greenbelt_general_information_path, :class => "dropdown-item" %>
-          <%= link_to "Rules", greenbelt_rules_path, :class => "dropdown-item" %>
-          <%= link_to "Millpond Nature Trail", greenbelt_millpond_trail_path, :class => "dropdown-item" %>
+          <%= link_to "General Information", greenbelt_general_information_path, :class => "dropdown-item #{active? greenbelt_general_information_path}" %>
+          <%= link_to "Rules", greenbelt_rules_path, :class => "dropdown-item #{active? greenbelt_rules_path}" %>
+          <%= link_to "Millpond Nature Trail", greenbelt_millpond_trail_path, :class => "dropdown-item #{active? greenbelt_millpond_trail_path}" %>
           
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lake</a>
         <div class="dropdown-menu" aria-labelledby="dropdown03">
-          <%= link_to "General Information", lake_general_information_path, :class => "dropdown-item" %>
-          <%= link_to "Rules", lake_rules_path, :class => "dropdown-item" %>
-          <%= link_to "Private Boat Dock Approval", lake_dock_approval_path, :class => "dropdown-item" %>
-          <%= link_to "Lake Mowing Schedule", lake_mowing_schedule_path, :class => "dropdown-item" %>
-          <%= link_to "Fishing",  lake_fishing_path, :class => "dropdown-item" %>
-          <%= link_to "Millpond", lake_millpond_path, :class => "dropdown-item" %>
-          <%= link_to "Feeding the Waterfowl", lake_feeding_waterfowl_path, :class => "dropdown-item" %>
+          <%= link_to "General Information", lake_general_information_path, :class => "dropdown-item #{active? lake_general_information_path}" %>
+          <%= link_to "Rules", lake_rules_path, :class => "dropdown-item #{active? lake_rules_path}" %>
+          <%= link_to "Private Boat Dock Approval", lake_dock_approval_path, :class => "dropdown-item #{active? lake_dock_approval_path}" %>
+          <%= link_to "Lake Mowing Schedule", lake_mowing_schedule_path, :class => "dropdown-item #{active? lake_mowing_schedule_path}" %>
+          <%= link_to "Fishing",  lake_fishing_path, :class => "dropdown-item #{active? lake_fishing_path}" %>
+          <%= link_to "Millpond", lake_millpond_path, :class => "dropdown-item #{active? lake_millpond_path}" %>
+          <%= link_to "Feeding the Waterfowl", lake_feeding_waterfowl_path, :class => "dropdown-item #{active? lake_feeding_waterfowl_path}" %>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Swimming Pool</a>
         <div class="dropdown-menu" aria-labelledby="dropdown04">
-          <%= link_to "General Information", swimming_pool_general_information_path, :class => "dropdown-item" %>
-          <%= link_to "Rules", swimming_pool_rules_path, :class => "dropdown-item" %>
-          <%= link_to "Hours of Operation", swimming_pool_hours_path, :class => "dropdown-item" %>
-          <%= link_to "Admission Fees", swimming_pool_admission_path, :class => "dropdown-item" %>
-          <%= link_to "Season Passes", swimming_pool_season_pass_path, :class => "dropdown-item" %>
-          <%= link_to "Party Rental", swimming_pool_party_rental_path, :class => "dropdown-item" %>
-          <%= link_to "Swimming Lessons", swimming_pool_swimming_lessons_path, :class => "dropdown-item" %>
+          <%= link_to "General Information", swimming_pool_general_information_path, :class => "dropdown-item #{active? swimming_pool_general_information_path}" %>
+          <%= link_to "Rules", swimming_pool_rules_path, :class => "dropdown-item #{active? swimming_pool_rules_path}" %>
+          <%= link_to "Hours of Operation", swimming_pool_hours_path, :class => "dropdown-item #{active? swimming_pool_hours_path}" %>
+          <%= link_to "Admission Fees", swimming_pool_admission_path, :class => "dropdown-item #{active? swimming_pool_admission_path}" %>
+          <%= link_to "Season Passes", swimming_pool_season_pass_path, :class => "dropdown-item #{active? swimming_pool_season_pass_path}" %>
+          <%= link_to "Party Rental", swimming_pool_party_rental_path, :class => "dropdown-item #{active? swimming_pool_party_rental_path}" %>
+          <%= link_to "Swimming Lessons", swimming_pool_swimming_lessons_path, :class => "dropdown-item #{active? swimming_pool_swimming_lessons_path}" %>
         </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parks</a>
         <div class="dropdown-menu" aria-labelledby="dropdown05">
-          <%= link_to "General Information",   parks_general_information_path, :class => "dropdown-item" %>
-          <%= link_to "Park Locations & Amenities", parks_all_parks_path, :class => "dropdown-item" %>
-          <%= link_to "Park Rules",  parks_rules_path, :class => "dropdown-item" %>
-          <%= link_to "Hours of Operation", parks_hours_path, :class => "dropdown-item" %>
-          <%= link_to "Pavilion Rental Fees", parks_pavilion_fees_path, :class => "dropdown-item" %>
+          <%= link_to "General Information",   parks_general_information_path, :class => "dropdown-item #{active? parks_general_information_path}" %>
+          <%= link_to "Park Locations & Amenities", parks_all_parks_path, :class => "dropdown-item #{active? parks_all_parks_path}" %>
+          <%= link_to "Park Rules",  parks_rules_path, :class => "dropdown-item #{active? parks_rules_path}" %>
+          <%= link_to "Hours of Operation", parks_hours_path, :class => "dropdown-item #{active? parks_hours_path}" %>
+          <%= link_to "Pavilion Rental Fees", parks_pavilion_fees_path, :class => "dropdown-item #{active? parks_pavilion_fees_path}" %>
         </div>
       </li>
       <li class="nav-item">
@@ -126,8 +126,8 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
         <div class="dropdown-menu" aria-labelledby="dropdown07">
-          <%= link_to "Service Agency",   contact_service_agency_path, :class => "dropdown-item" %>
-          <%= link_to "Community Links", contact_community_links_path, :class => "dropdown-item" %>
+          <%= link_to "Service Agency",   contact_service_agency_path, :class => "dropdown-item #{active? contact_service_agency_path}" %>
+          <%= link_to "Community Links", contact_community_links_path, :class => "dropdown-item #{active? contact_community_links_path}" %>
         </div>
       </li>
     </ul>
