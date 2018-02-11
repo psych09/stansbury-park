@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :portfolios
   get 'contact/service_agency'
 
   get 'contact/community_links'

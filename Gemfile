@@ -35,3 +35,9 @@ gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'devise', '~> 4.4'
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+# Imaage Uploading
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'

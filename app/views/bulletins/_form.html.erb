@@ -1,11 +1,26 @@
 <%= form_for(@bulletin_post) do |f| %>
-   <div class="form-group">
-      <%= f.text_field :title, class: 'form-control', placeholder: 'Title' %>
-   </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.text_field :title, class: 'form-control', placeholder: 'Title' %>
+      </div>
+     
+      <div class="form-group">
+        <%= f.file_field :main_image %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.file_field :thumb_image %>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="form-group">
+         <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: 'Content' %>
+      </div>
+    </div>
+  </div>
    
-    <div class="form-group">
-       <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: 'Content' %>
-     </div>
    
    <div class="d-flex flex-row float-right">
      <div class="p-2">
