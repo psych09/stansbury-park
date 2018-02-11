@@ -1,11 +1,11 @@
 <div class="main-card-layout">
-  <div class="card">
+  <div class="title-container">
     <h1 id="title">Stansbury Service Agency</h1>
     <h4>Upcoming Activities & Announcements</h4>
   </div>
   
   <% if user_signed_in? %>
-    <%= content_tag :div, class: "card" do %>
+    <%= content_tag :div, class: "title-container" do %>
       <%= content_tag :h2 do %>
         Hi, <%= current_user.first_name %>
       <% end %>
@@ -14,11 +14,10 @@
     <% end %>
   <% else %>
     <% nil %>
-  <% end %>
-  
+  <% end %>  
   
   <div class="container">
-    <div id="columns" class="sortable">
+    <div class="columns <%= "sortable" if logged_in?(:site_admin) %>">
       <% @bulletins.each do |item| %>
         <div class="card post" data-id="<%= item.id %>">
           <%= image_tag item.thumb_image, :class => "car-img-top" %>
