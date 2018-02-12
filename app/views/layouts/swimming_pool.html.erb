@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <%= render 'shared/nav' %>
-    
     <title>StansburyPark</title>
     <%= csrf_meta_tags %>
+    
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,6 +18,8 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    
+    <%= render 'shared/nav' %>
        
     <main role="main" class="container">
       <div class="starter-template">
