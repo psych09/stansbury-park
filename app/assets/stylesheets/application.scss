@@ -242,12 +242,21 @@ body {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+
+.navbar-collapse {
+  overflow-y: scroll !important;
+  max-height: 300px;
+}
+
+.container {
+  max-width: 100%;
+}
   
-  #title {
-    font-size: .90em;
-  }
-  
-  #columns {
+.title {
+  font-size: 90%;
+}
+
+.columns {
   -webkit-column-count: 1;
   -webkit-column-gap: 10px;
   -webkit-column-fill: auto;
