@@ -1,5 +1,5 @@
 <div class="card post" data-id="<%= bulletin_post.id %>">
-  <%= image_tag bulletin_post.thumb_image, :class => "car-img-top" %>
+  <%= image_tag bulletin_img(bulletin_post.thumb_image, 'thumb'), :class => "car-img-top" %>
   <div class="card-body">
     <h4 class="header"><%= link_to bulletin_post.title, bulletin_show_path(bulletin_post.id) %></h4>
     <p class="card-text text-left"><%= bulletin_post.body %></p>
@@ -9,3 +9,4 @@
     </div>  
   </div>
 </div>
+
