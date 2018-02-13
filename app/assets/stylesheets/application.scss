@@ -50,10 +50,6 @@ body {
  padding: 10px;
 }
 
-.nav-item {
-  margin: 0px 5px 0px 5px;
-}
-
 #background {
   position: fixed;
   top: 50%;
@@ -240,32 +236,12 @@ body {
 	}
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  
-  .mobile-hidden {
-    display: none;
-  }
+.desktop-hidden {
+  display: none;
+}
 
-
-  .navbar-collapse {
-    overflow-y: scroll !important;
-    max-height: 300px;
-  }
-  
-  .nav-item {
-    margin: 0px;
-  }
-  
-  .container {
-    max-width: 100%;
-  }
-    
-  .title {
-    font-size: 100%;
-    font-weight: 600;
-    padding-top: 8px;
-  }
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
   
   .columns {
     -webkit-column-count: 1;
@@ -277,6 +253,33 @@ body {
     column-count: 1;
     column-gap: 10px;
     column-fill: auto;
+  }
+}
+
+.mobile-show {
+    display: block;
+  }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .navbar-collapse {
+    overflow-y: scroll !important;
+    max-height: 300px;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+    
+  .title {
+    font-size: 100%;
+    font-weight: 600;
+    padding-top: 8px;
   }
   
   .fishing-strong-text {
