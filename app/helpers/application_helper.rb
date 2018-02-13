@@ -13,4 +13,8 @@ module ApplicationHelper
             poster: img
             )
   end
+  
+  def image_placeholder(height, width)
+    "<img src='http://via.placeholder.com/#{height}x#{width}', style='width: 100%'><a>".html_safe
+  end
 end

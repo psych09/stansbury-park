@@ -242,30 +242,45 @@ body {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-
-.navbar-collapse {
-  overflow-y: scroll !important;
-  max-height: 300px;
-}
-
-.container {
-  max-width: 100%;
-}
   
-.title {
-  font-size: 90%;
-}
+  .mobile-hidden {
+    display: none;
+  }
 
-.columns {
-  -webkit-column-count: 1;
-  -webkit-column-gap: 10px;
-  -webkit-column-fill: auto;
-  -moz-column-count: 1;
-  -moz-column-gap: 10px;
-  -moz-column-fill: auto;
-  column-count: 1;
-  column-gap: 10px;
-  column-fill: auto;
-}
+
+  .navbar-collapse {
+    overflow-y: scroll !important;
+    max-height: 300px;
+  }
+  
+  .nav-item {
+    margin: 0px;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+    
+  .title {
+    font-size: 100%;
+    font-weight: 600;
+    padding-top: 8px;
+  }
+  
+  .columns {
+    -webkit-column-count: 1;
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-count: 1;
+    -moz-column-gap: 10px;
+    -moz-column-fill: auto;
+    column-count: 1;
+    column-gap: 10px;
+    column-fill: auto;
+  }
+  
+  .fishing-strong-text {
+    padding-left: 0px;
+  }
 
 }
