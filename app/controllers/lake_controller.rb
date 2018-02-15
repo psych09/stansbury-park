@@ -2,11 +2,11 @@ class LakeController < ApplicationController
   layout "lake"
   
   def general_information
-    @page_title = "Lake General Information"
+    @page_title = "Lake | General Information"
   end
 
   def rules
-    @page_title = "Lake Rules"
+    @page_title = "Lake | Rules"
   end
 
   def dock_approval

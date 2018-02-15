@@ -2,11 +2,11 @@ class GreenbeltController < ApplicationController
   layout "greenbelt"
   
   def general_information
-    @page_title = "Greenbelt General Information"
+    @page_title = "Greenbelts | General Information"
   end
 
   def rules
-    @page_title = "Greenbelt Rules"
+    @page_title = "Greenbelts | Rules"
   end
 
   def millpond_trail
