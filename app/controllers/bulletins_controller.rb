@@ -5,6 +5,7 @@ class BulletinsController < ApplicationController
   
   def index
     @bulletin_posts = Bulletin.by_position
+    @page_title = "Home"
   end
   
   def sort
@@ -16,10 +17,13 @@ class BulletinsController < ApplicationController
   end
   
   def show
+    @page_title = @bulletin_post.title
+    @seo_keywords = @bulletin_post.body
   end
   
   def new
     @bulletin_post = Bulletin.new
+    @page_title = "New Bulletin Post"
   end
   
   def create
@@ -35,6 +39,7 @@ class BulletinsController < ApplicationController
   end
   
   def edit
+    @page_title = "Edit Bulletin Post"
   end
   
   def update

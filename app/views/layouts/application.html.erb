@@ -6,8 +6,10 @@
     
     <%= render 'shared/nav' %>
     
-    <title>StansburyPark</title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+    
+    <meta name="keywords" content="<%= @seo_keywords %>" />
     
     <%= favicon_link_tag 'favicons/favicon.ico' %>
 
