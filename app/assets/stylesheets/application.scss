@@ -78,10 +78,6 @@ body {
   justify: center;
 }
 
-.fishing-strong-text {
-  padding-left: 60px;
-}
-
 .no-list-style {
   list-style: none;
 }
@@ -259,8 +255,6 @@ body {
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   
-  
-  
   .navbar-collapse {
     overflow-y: scroll !important;
     max-height: 300px;
@@ -276,8 +270,9 @@ body {
     padding-top: 8px;
   }
   
-  .fishing-strong-text {
-    padding-left: 0px;
+  .nav-search-box {
+    width: 200px;
+    margin-right: 5px;
   }
 
 }
