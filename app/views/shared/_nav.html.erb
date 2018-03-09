@@ -85,15 +85,20 @@
       <li class="nav-item">
         <%= link_to "Golf Course", golf_course_path, :class => "nav-link #{active? golf_course_path}" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Cemetery", cemetery_path, :class => "nav-link #{active? cemetery_path}" %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cemetery</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown06">
+          <%= link_to "General Information", cemetery_general_information_path, :class => "dropdown-item #{active? cemetery_general_information_path}" %>
+          <%= link_to "Cemetery Rules and Regulations", asset_path("Cemetery Rules and Regulations.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          <%= link_to "Cemetery Fees and Charges", cemetery_fees_path, :class => "dropdown-item #{active? cemetery_fees_path}" %>
+        </div>
       </li>
       <li class="nav-item">
         <%= link_to "S.P.O.C.", spoc_path, :class => "nav-link #{active? spoc_path}" %>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown06">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown07">
           
           <h6 class="dropdown-header">General</h6>
           <%= link_to "Employment Application", asset_path("Employment_Application.pdf"), :class => "dropdown-item", :target => "_blank" %>
@@ -109,6 +114,11 @@
           
           <h6 class="dropdown-header">Lake</h6>
           <%= link_to "Watercraft Registration", asset_path("Boat_Registration.pdf"), :class => "dropdown-item", :target => "_blank" %>
+          
+          <div class="dropdown-divider"></div>
+          
+          <h6 class="dropdown-header">Swimming Pool</h6>
+          <%= link_to "Season Passes", asset_path("Swimming Pool Season Passes.pdf"), :class => "dropdown-item", :target => "_blank" %>
           
           <div class="dropdown-divider"></div>
           

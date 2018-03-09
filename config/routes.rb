@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'cemetery/general_information'
+
+  get 'cemetery/fees'
+
   get 'contact/service_agency'
 
   get 'contact/community_links'
@@ -79,8 +83,6 @@ Rails.application.routes.draw do
   get 'meeting_minutes', to: 'pages#meeting_minutes'
   
   get 'golf_course', to: 'pages#golf_course'
-  
-  get 'cemetery', to: 'pages#cemetery'
   
   get 'spoc', to: 'pages#spoc'
   

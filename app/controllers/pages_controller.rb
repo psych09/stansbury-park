@@ -10,10 +10,6 @@ class PagesController < ApplicationController
   def golf_course
     @page_title = "Golf Course"
   end
-
-  def cemetery
-    @page_title = "Cemetery"
-  end
   
   def spoc
     @page_title = "S.P.O.C."

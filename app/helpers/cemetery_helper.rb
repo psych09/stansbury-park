@@ -1,0 +1,2 @@
+module CemeteryHelper
+end
