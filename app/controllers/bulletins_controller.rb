@@ -5,7 +5,7 @@ class BulletinsController < ApplicationController
   
   def index
     @bulletin_posts = Bulletin.by_position
-    @page_title = "Home"
+    @page_title = "SSA"
   end
   
   def sort
